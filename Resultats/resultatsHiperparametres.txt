@@ -10,10 +10,20 @@ La millor score: -0.3818819315104827
 Error quadratic mitja: 0.6102964057616946
 
 Regressió d'arbre aleatoria
-
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+Los mejores hiperparámetros son: {'n_estimators': 600, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 110, 'bootstrap': True}
+La millor score: 0.17263699973440602
+Error quadratic mitja: 0.4462795094521141
 
 Regressió Logística
-
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+Los mejores hiperparámetros son: {'C': 100, 'penalty': 'l2', 'solver': 'lbfgs'}
+La millor score: 0.6563331380487278
+Error quadratic mitja: 0.5913218754491942
 
 SGD - Descens de Gradient Estocàstic
+Los mejores hiperparámetros son: {'alpha': 0.0001, 'l1_ratio': 0.0, 'loss': 'squared_error', 'penalty': 'l1'}
+La millor score: -0.46694453213335685
+Error quadratic mitja: 0.47123399255814247
+
 

@@ -109,7 +109,7 @@ param_grid = {'n_estimators': [int(x) for x in np.linspace(start = 200, stop = 2
 regressor = RandomForestRegressor()
 
 # Utiliza la búsqueda en cuadrícula (grid search) para encontrar los mejores hiperparámetros
-grid_search = GridSearchCV(regressor, param_grid, cv=5, verbose=2, n_jobs=-1)
+grid_search = RandomizedSearchCV(regressor, param_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
 # Entrena el modelo utilizando los hiperparámetros encontrados
 grid_search.fit(x_train, y_train)
@@ -151,7 +151,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import SGDRegressor
 
 # Define los parámetros que quieres explorar
-param_grid = {'loss': ['squared_loss', 'huber'],
+param_grid = {'loss': ['squared_error', 'huber'],
               'penalty': ['l2', 'l1', 'elasticnet'],
               'alpha': [0.0001, 0.001, 0.01, 0.1, 1.0],
               'l1_ratio': [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}
@@ -163,7 +163,7 @@ regressor = SGDRegressor()
 grid_search = GridSearchCV(regressor, param_grid, cv=5, scoring='neg_mean_absolute_error')
 
 # Entrena el modelo utilizando los hiperparámetros encontrados
-grid_search.fit(X_train, y_train)
+grid_search.fit(x_train, y_train)
 
 # Imprime los mejores hiperparámetros encontrados
 print("Los mejores hiperparámetros son: {}".format(grid_search.best_params_))
