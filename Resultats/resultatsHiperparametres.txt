@@ -1,0 +1,19 @@
+Regressió Lineal Multivariable
+Fitting 5 folds for each of 4 candidates, totalling 20 fits
+Mejores hiperparámetros: {'copy_X': True, 'fit_intercept': True}
+La millor score: 0.13934800752638796
+Error quadratic mitja: 0.46730305253424764
+
+Regressió d'arbre de decisió
+Los mejores hiperparámetros son: {'max_depth': 50, 'max_features': 'log2', 'max_leaf_nodes': None, 'min_weight_fraction_leaf': 0.0}
+La millor score: -0.3818819315104827
+Error quadratic mitja: 0.6102964057616946
+
+Regressió d'arbre aleatoria
+
+
+Regressió Logística
+
+
+SGD - Descens de Gradient Estocàstic
+

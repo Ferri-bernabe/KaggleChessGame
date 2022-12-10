@@ -1,0 +1,22 @@
+Regressió lineal multivariable
+Score: 0.13613285868211422
+MSE: 0.21551770702126744
+
+Regressió d'arbre de decisió
+Profunditat del arbre: 45
+Numero de fulles del arbre: 3563
+Score: -0.5373970556533783
+MSE: 0.383550053437834
+
+Regressió d'arbre aleatori
+Score: 0.16451485666905974
+MSE: 0.20843696180679255
+
+Regressió Logística
+Score: 0.6528322052012825
+MSE: 0.3471677947987175
+
+SGD - Descens de Gradient Estocàstic
+Score: 0.6373352333452084
+MSE: 0.3626647666547916
+
