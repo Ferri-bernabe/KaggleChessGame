@@ -1,5 +1,6 @@
 # KaggleChessGame
 Repositori de l'estudi del Kaggle Chess Game Dataset (Lichess)
+
 Link al Kaggle: https://www.kaggle.com/datasets/datasnaek/chess/code?datasetId=2321
 
 ### Author: Ferran Bernabé Puigmarti
@@ -17,31 +18,45 @@ Overall, the Lichess Chess Game Dataset is a valuable resource for anyone intere
 Some potential uses for the dataset include:
 
   · Analyzing common moves and strategies used in won and lost games to identify patterns and improve game strategy.
+  
   · Studying the characteristics of successful players to identify traits that may contribute to their success.
+  
   · Training machine learning models to predict the outcome of a game based on the moves made so far.
   
 Our main objective in this study is to analyze how the winner variable is affected by some of the other numeric variables.
 
 ## Analyzing the dataset
+
 ### Preparing the dataset
+
 First of all, we look the initial dataset (2 entries):
+
 ![image](https://user-images.githubusercontent.com/57755230/206905194-7e09ba59-a636-404f-8171-e855acb9adf7.png)
 
 Now, we look the correlation between all the variables, focusing on our objective variable ("winner"):
+
 ![matriuCorrelacio](https://user-images.githubusercontent.com/57755230/206905283-07586328-5bd1-472e-9be1-45858aeda26c.png)
 
 Looking at the matrix, we can see that no variables have a high correlation with our objective variable.
+
 Now, we focus on preparing the dataset with the numeric variables, like I said before. Here there's the describe of the dataset:
+
 ![image](https://user-images.githubusercontent.com/57755230/206905440-c772d6c7-884e-4e60-8e5e-ee8a127ee433.png)
 
 Finally, I modified the dataset dropping the "draw" results of our main variable to convert it as a binary variabe.
 
 ### Computational learning models
+
 In this study, I decided to apply the following computational learning models:
+
   · Multivariable Lineal Regression
+  
   · Decision Tree Regression
+  
   · Random Forest Classifier
+  
   · Logistic Regression
+  
   · SGD - stochastic gradient descent
 
 Applying a training set of the 70% of the dataset I had the following results applying the default models:
