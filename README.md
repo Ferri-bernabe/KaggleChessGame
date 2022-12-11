@@ -75,12 +75,25 @@ Finally, I tried to search the best hiperparameters for each model and calculati
 
 | Model | Score | MSE | Best hiperparameters |
 |----------|----------|----------|----------|
-| Multivariable Lineal Regression   | 0.139  | 0.215   |  |
-| Decision Tree Regression   |  -0.528  | 0.381   |  |
-| Random Forest Classifier   | 0.159  | 0.210   |  |
-| Logistic Regression   | 0.650   | 0.350   |  |
-| SGD - stochastic gradient descent   | 0.632   | 0.268   |  |
+| Multivariable Lineal Regression   | 0.133  | 0.463   | {'copy_X': True, 'fit_intercept': True} |
+| Decision Tree Regression   |  0.126  | 0.472   | {'max_depth': 30, 'max_features': 'log2', 'max_leaf_nodes': 50, 'min_weight_fraction_leaf': 0.0} |
+| Random Forest Classifier   | 0.173  | 0.446   | {'n_estimators': 600, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 110, 'bootstrap': True} |
+| Logistic Regression   | 0.656   | 0.591   | {'C': 100, 'penalty': 'l2', 'solver': 'lbfgs'} |
+| SGD - stochastic gradient descent   | 0.467   | 0.471   | {'alpha': 0.0001, 'l1_ratio': 0.0, 'loss': 'squared_error', 'penalty': 'l1'} |
 
+## Executing the code 
 
+In first place, you can execute the notebook.
+
+If you prefer, you can also execute the oython files:
+
+  · git clone https://github.com/Ferri-bernabe/KaggleChessGame.git
+  
+  · pip install -r requeriements.txt
+  
+  · cd src && python3 run.py
+  
+## Conclusion
+The predictions aren't to precise in any model because of the correlations between the variables with our objective variable. Anyways the model "Logistic Regression" gives the best score for our transormed binary variable.
 
 
