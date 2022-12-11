@@ -85,7 +85,7 @@ Finally, I tried to search the best hiperparameters for each model and calculati
 
 In first place, you can execute the notebook.
 
-If you prefer, you can also execute the oython files:
+If you prefer, you can also execute the python files:
 
   · git clone https://github.com/Ferri-bernabe/KaggleChessGame.git
   
