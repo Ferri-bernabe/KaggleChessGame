@@ -74,7 +74,7 @@ Applying a training set of the 70% of the dataset I had the following results (a
 Finally, I tried to search the best hiperparameters for each model and calculating the best Score and the MSE mean. In the following table you can see the results:
 
 | Model | Score | MSE | Best hiperparameters |
-|----------|----------|----------|
+|----------|----------|----------|----------|
 | Multivariable Lineal Regression   | 0.139  | 0.215   |  |
 | Decision Tree Regression   |  -0.528  | 0.381   |  |
 | Random Forest Classifier   | 0.159  | 0.210   |  |
