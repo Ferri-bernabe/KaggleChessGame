@@ -59,7 +59,28 @@ In this study, I decided to apply the following computational learning models:
   
   · SGD - stochastic gradient descent
 
-Applying a training set of the 70% of the dataset I had the following results applying the default models:
+Applying a training set of the 70% of the dataset I had the following results (applying the default models):
+
+| Model | Score | MSE |
+|----------|----------|----------|
+| Multivariable Lineal Regression   | 0.139  | 0.215   |
+| Decision Tree Regression   |  -0.528  | 0.381   |
+| Random Forest Classifier   | 0.159  | 0.210   |
+| Logistic Regression   | 0.650   | 0.350   |
+| SGD - stochastic gradient descent   | 0.632   | 0.268   |
+
+### Searching the best hyperparameters
+
+Finally, I tried to search the best hiperparameters for each model and calculating the best Score and the MSE mean. In the following table you can see the results:
+
+| Model | Score | MSE | Best hiperparameters |
+|----------|----------|----------|
+| Multivariable Lineal Regression   | 0.139  | 0.215   |  |
+| Decision Tree Regression   |  -0.528  | 0.381   |  |
+| Random Forest Classifier   | 0.159  | 0.210   |  |
+| Logistic Regression   | 0.650   | 0.350   |  |
+| SGD - stochastic gradient descent   | 0.632   | 0.268   |  |
+
 
 
 
