@@ -75,7 +75,7 @@ from sklearn.tree import DecisionTreeRegressor
 # Define los parámetros que quieres explorar
 param_grid = {'max_depth': [1,3,5,10,15,25,30,50],
               'min_weight_fraction_leaf': [0.0,0.1,0.2,0.3,0.4,0.5],
-              'max_features': ['auto','log2','sqrt',None],
+              'max_features': ['1.0','log2','sqrt',None],
               'max_leaf_nodes': [None,10,20,50,80,100,250,500]}
 
 # Crea una instancia del modelo DecisionTreeRegressor
