@@ -31,6 +31,7 @@ corr_matrix = dataset.corr()
 sns.heatmap(corr_matrix, annot=True)
 plt.show()
 
+dataset = dataset[["turns","white_rating","black_rating","opening_ply","winner"]]
 dataset = dataset.values
 for i in range(1,5):
     ax = plt.subplot(2,3,i)

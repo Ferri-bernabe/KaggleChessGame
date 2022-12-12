@@ -26,6 +26,7 @@ dataset = dataset.drop_duplicates()
 dataset['winner'] = dataset['winner'].replace(['white', 'black', 'draw'], [0, 1, 2])
 dataset = dataset[dataset['winner'] != 2]
 
+dataset = dataset[["turns","white_rating","black_rating","opening_ply","winner"]]
 dataset = dataset.values
 
 scaler = MinMaxScaler()
