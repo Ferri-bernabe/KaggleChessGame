@@ -75,7 +75,7 @@ from sklearn.tree import DecisionTreeRegressor
 # Define los parámetros que quieres explorar
 param_grid = {'max_depth': [1,3,5,10,15,25,30,50],
               'min_weight_fraction_leaf': [0.0,0.1,0.2,0.3,0.4,0.5],
-              'max_features': ['1.0','log2','sqrt',None],
+              'max_features': ['log2','sqrt',None],
               'max_leaf_nodes': [None,10,20,50,80,100,250,500]}
 
 # Crea una instancia del modelo DecisionTreeRegressor
@@ -100,7 +100,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 # Define los parámetros que quieres explorar
 param_grid = {'n_estimators': [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)],
-              'max_features': ['auto', 'sqrt'],
+              'max_features': ['sqrt'],
               'max_depth': [int(x) for x in np.linspace(10, 110, num = 11)],
               'min_samples_split': [2, 5, 10],
               'min_samples_leaf': [1, 2, 4],
