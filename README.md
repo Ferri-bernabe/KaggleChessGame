@@ -23,7 +23,7 @@ Some potential uses for the dataset include:
   
   · Training machine learning models to predict the outcome of a game based on the moves made so far.
   
-Our main objective in this study is to analyze how the winner variable is affected by some of the other numeric variables.
+Our main objective in this study is to analyze how the winner variable is affected by some of the other numeric variables, founding the best learnig machine model to predict this variable.
 
 ## Analyzing the dataset
 
@@ -94,6 +94,6 @@ If you prefer, you can also execute the python files:
   · cd src && python3 run.py
   
 ## Conclusion
-The predictions aren't to precise in any model because of the correlations between the variables with our objective variable. Anyways the model "Logistic Regression" gives the best score for our transormed binary variable.
+We have seen that we don't have the best results for the score or MSE in any learning machine model, because the correlation between our objective variable and the other ones aren't to good. Anyways, it seems that the Logistic Regression model presents the best score, the Random Forest Classifier the best MSE and the SGD model the best results considering the score and the MSE.
 
 
